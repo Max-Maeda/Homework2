@@ -1,0 +1,14 @@
+.text {
+    text-align: center;
+    color: green;
+}
+.text__firstLine {
+    text-indent: 25px;
+    color: grey;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+.text__main {
+    letter-spacing: 5px;
+}
