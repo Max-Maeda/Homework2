@@ -9,6 +9,7 @@
         url('../fonts/MarckScript-Regular.eot') format('eot');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'RubikDirt';
     font-weight: 400;
@@ -21,13 +22,11 @@
     font-display: swap;
 }
 
-.Vasya-esse__history {
+.text__paragraph {
     font-family: RubikDirt;
-    font-weight:;
-    font-style: italic;
-    font-size: 2em;
-}
-.Vasya__quote {
-    font-family: MarckScript;
-    font-size: 3em;
+    padding: 25px 25px 0px 25px;
+    max-width: 50vw;
+    max-height: 100px;
+    overflow: scroll;
+    line-height: 100px;
 }
