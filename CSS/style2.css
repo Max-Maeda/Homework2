@@ -22,13 +22,41 @@
     font-display: swap;
 }
 
-.block {
+.image__eyes {
+    position: relative; left: 40vh; top: 25vh;
+    
+}
 
-    height: 150px;
-    /* width: 100px; */
-    background-color: aquamarine;
-    position: fixed;
-    bottom: 100px;
-    right: 50px;
-    left: 50vw;
+.image__description {
+    height: 40px;
+    width: 722px;
+    font-family: RubikDirt;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    position: relative; left: 49vh; top: 12vh;
+    transform: rotate(-30deg) translateX(10vw);
+    opacity: 0;
+    transition: 3s;
+}
+
+
+
+.image__description:hover {
+    opacity: 1;
+    /* transition:3s; */
+    
+}
+.block {
+    border-bottom: solid 5px; color: black;
+    position: relative;top: 30vh;
+    transition: 3s 0.5s;
+}
+.block:hover {
+    transition: 3s 2s;
+    color: rgb(238, 27, 12);
+}
+.title {
+    font-family:MarckScript;
+    font-size: 2rem;
+    position: relative; left: 71vh;top: 20vh;
 }
