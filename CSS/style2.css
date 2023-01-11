@@ -1,41 +1,43 @@
 @font-face {
-    font-family: 'MarckScript';
-    font-weight: 400;
-    font-style: normal;
-    src: local('Marck Script Regular'),
-        local('MarckScript-Regular'),
-        url('../fonts/MarckScript-Regular.woff2') format('woff2'),
-        url('../fonts/MarckScript-Regular.woff') format('woff'),
-        url('../fonts/MarckScript-Regular.eot') format('eot');
-    font-display: swap;
+  font-family: 'MarckScript';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Marck Script Regular'),
+    local('MarckScript-Regular'),
+    url('../fonts/MarckScript-Regular.woff2') format('woff2'),
+    url('../fonts/MarckScript-Regular.woff') format('woff'),
+    url('../fonts/MarckScript-Regular.eot') format('eot');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'RubikDirt';
-    font-weight: 400;
-    font-style: normal;
-    src: local('Rubik Dirt Regular'),
-        local('RubikDirt-Regular'),
-        url('../fonts/RubikDirt-Regular.woff2') format('woff2'),
-        url('../fonts/RubikDirt-Regular.woff') format('woff'),
-        url('../fonts/RubikDirt-Regular.eot') format('eot');
-    font-display: swap;
-}
-.text {
-    font-family:RubikDirt;
-    padding: 100px 200px 100px 200px;
-    margin: 100px 200px 100px 200px;
-
-    border: solid 5px black;
-    
-    animation: text-color 5s ease-in-out infinite alternate-reverse;
+  font-family: 'RubikDirt';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Rubik Dirt Regular'),
+    local('RubikDirt-Regular'),
+    url('../fonts/RubikDirt-Regular.woff2') format('woff2'),
+    url('../fonts/RubikDirt-Regular.woff') format('woff'),
+    url('../fonts/RubikDirt-Regular.eot') format('eot');
+  font-display: swap;
 }
 
-@keyframes text-color {
-    0% {
-        color: black;
-    }
-    100% {
-        color: red;
-    }
+.flexbox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.flexbox__item1, .flexbox__item2, .flexbox__item3, .flexbox__item4, .flexbox__item5 {
+  border: solid 1px black;
+  padding: 10px;
+  font-family: RubikDirt;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.flexbox__item1-text, .flexbox__item2-text, .flexbox__item3-text, .flexbox__item4-text, .flexbox__item5-text {
+  font-family: MarckScript;
+  letter-spacing: initial;
+  padding: 10px 5px 0px 5px;
 }
