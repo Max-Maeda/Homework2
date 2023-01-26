@@ -22,22 +22,17 @@
   font-display: swap;
 }
 
-.flexbox {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.container {
+  padding: 3em;
+  display: grid;
+  
+  grid-gap: 1em;
+  grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+  align-items: start;
 }
 
-.flexbox__item1, .flexbox__item2, .flexbox__item3, .flexbox__item4, .flexbox__item5 {
+.item {
+  font-family:RubikDirt ;
+  padding: 1em;
   border: solid 1px black;
-  padding: 10px;
-  font-family: RubikDirt;
-  letter-spacing: 10px;
-  text-align: center;
-}
-
-.flexbox__item1-text, .flexbox__item2-text, .flexbox__item3-text, .flexbox__item4-text, .flexbox__item5-text {
-  font-family: MarckScript;
-  letter-spacing: initial;
-  padding: 10px 5px 0px 5px;
 }
