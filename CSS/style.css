@@ -36,3 +36,26 @@
   padding: 1em;
   border: solid 1px black;
 }
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 10px;
+  margin: 20px;
+  /* border: solid 1px black; */
+  background-color: rgb(188, 229, 238);
+}
+.menu__item {
+ font-family: MarckScript;
+ font-size: 2em;
+ text-align: center;
+ border: solid 1px black;
+ transition:3s;
+
+}
+.menu__item:hover:first-child {
+  color: red;
+  transition:3s;
+  
+}
