@@ -22,40 +22,40 @@
   font-display: swap;
 }
 
-.container {
-  padding: 3em;
-  display: grid;
-  
-  grid-gap: 1em;
-  grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
-  align-items: start;
-}
+.title {
+  font-family: MarckScript;
+  font-size: 3em;
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
 
-.item {
-  font-family:RubikDirt ;
-  padding: 1em;
-  border: solid 1px black;
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: 10px;
-  margin: 20px;
-  /* border: solid 1px black; */
-  background-color: rgb(188, 229, 238);
-}
-.menu__item {
- font-family: MarckScript;
- font-size: 2em;
- text-align: center;
- border: solid 1px black;
- transition:3s;
 
 }
-.menu__item:hover:first-child {
-  color: red;
-  transition:3s;
-  
+
+.title::before {
+  content: "";
+  position: absolute;
+  /* display: inline-block; */
+  background-color: rgb(15, 83, 231);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  margin: auto -15px;
+
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  /* display: inline-block; */
+  background-color: rgb(235, 8, 8);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  top: 0;
+  bottom: 0;
+  margin: auto 5px;
 }
